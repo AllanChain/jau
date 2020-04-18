@@ -1,0 +1,22 @@
+{
+  "name": "jau",
+  "version": "1.0.0",
+  "description": "Just Anothor Unique array of objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "files": [
+		"index.js"
+	],
+  "keywords": [
+    "obj",
+    "object",
+    "unique"
+  ],
+  "author": "Allan Chain <allanchain@pku.edu.cn>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^3.7.0"
+  }
+}

@@ -30,7 +30,7 @@ module.exports = {
   group(array, keys) {
     const comp = parseFunc(keys);
     const result = [];
-    array.forEach(a => pushDefault(result, array.findIndex(b => comp(a, b)), a));
+    array.forEach(a => pushDefault(result, result.findIndex(b => comp(a, b[0])), a));
     return result;
   }
 };

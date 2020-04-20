@@ -4,8 +4,8 @@ const jau = require('.');
 test('group: no param', t => {
   t.deepEqual(jau.group([1, 2, 2, 3, 1, 2, 4]),
     [[1, 1], [2, 2, 2], [3], [4]]);
-  t.deepEqual(jau.group(['a', 'a', 'b', 'a', 'c', 'a', 'd']),
-    [['a', 'a', 'a', 'a'], ['b'], ['c'], ['d']]);
+  t.deepEqual(jau.group(['a', 'a', 'b', 'a', 'c', 'b', 'd']),
+    [['a', 'a', 'a'], ['b', 'b'], ['c'], ['d']]);
 });
 test('group: with property name', t => {
   t.deepEqual(jau.group([{a: 1}, {a: 1, b: 2}, {b: 2}], 'a'),
@@ -26,7 +26,7 @@ test('group: with function', t => {
 test('unique: no param', t => {
   t.deepEqual(jau.unique([1, 2, 2, 3, 1, 2, 4]),
     [1, 2, 3, 4]);
-  t.deepEqual(jau.unique(['a', 'a', 'b', 'a', 'c', 'a', 'd']),
+  t.deepEqual(jau.unique(['a', 'a', 'b', 'a', 'c', 'b', 'd']),
     ['a', 'b', 'c', 'd']);
 });
 test('unique: with property name', t => {

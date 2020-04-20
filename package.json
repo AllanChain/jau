@@ -4,11 +4,11 @@
   "description": "Just Anothor Unique array of objects",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "xo && ava"
   },
   "files": [
-		"index.js"
-	],
+    "index.js"
+  ],
   "keywords": [
     "obj",
     "object",
@@ -24,7 +24,11 @@
     "type": "git",
     "url": "https://github.com/AllanChain/jau"
   },
+  "xo": {
+    "space": true
+  },
   "devDependencies": {
-    "ava": "^3.7.0"
+    "ava": "^3.7.0",
+    "xo": "^0.29.1"
   }
 }
